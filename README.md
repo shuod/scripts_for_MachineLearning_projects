@@ -4,8 +4,23 @@ Scripts used for various machine learning projects
 ## License
 The codes in this folder adopt MIT license. For details, check website: https://opensource.org/licenses/MIT
 
-## Predicting bandgap and HOMO using random forest
+The documents in this folder adopt Creative Common 4.0 with : BY-NC-ND
+
+`BY-NC-ND` – [Attribution-NonCommercial-NoDerivatives] 
+
+For details, check website: https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+
+## 1 Using random forest to predict bandgaps and HOMOs
 
 **Goal:** Random forest method was tested in order to be compared against traditional DFT/TD-DFT methods.
 
-**Method:** check my blog article:
+[Method and Results](./1_Using random forest to predict bandgaps and HOMOs/)
+
+
+
+## 2 Kaggle_contest_to_predict_semiconductor_bandgaps
+
+**Descriptions and Goals:** https://www.kaggle.com/c/nomad2018-predict-transparent-conductors
+
+
+

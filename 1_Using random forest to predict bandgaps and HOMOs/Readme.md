@@ -4,9 +4,11 @@ Goal: Random forest method was tested in order to be compared against traditiona
 
 Method: check my blog article:
 
-**Results(cv=8):**
+https://shuod.github.io/post/using-random-forest-to-predict-bandgaps-and-homos/
 
-1. Mean absolute error (MAE) when using random forest to predict bandgap:
+Results:
+
+**1. Mean absolute error (MAE) when using random forest to predict bandgap**:
 - Morgan fingerprint: MAE=0.4219 (number\_of\_trees=122)
 - RDKit fingerprint: MAE=0.4268 (number\_of\_trees=164)
 
@@ -16,7 +18,7 @@ Results from the chosen functional after benchmarking study in phase1 (HSE06) in
 - Before additional linear correction MAE=0.21
 - After additional linear correction MAE=0.15
 
-2. Mean absolute error (MAE) when using random forest to predict bandgap:
+**2. Mean absolute error (MAE) when using random forest to predict bandgap:**
 - Morgan fingerprint: MAE=0.1519 (number\_of\_trees=60)
 - RDKit fingerprint: MAE=0.1467 (number\_of\_trees=216)
 
