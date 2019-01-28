@@ -10,6 +10,7 @@ Created on Thu Jan  3 14:09:04 2019
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import dill as pickle
 
 from sklearn.ensemble import GradientBoostingRegressor, RandomForestRegressor
 from sklearn.model_selection import cross_validate
@@ -65,7 +66,8 @@ print("Score function used", RF_on_gap_Morgan.scorer_)
 print("Score for the best tuning", -1*RF_on_gap_Morgan.best_score_)
 print("fitting time", RF_on_gap_Morgan.refit_time_)
 
-
+save_model_parameter_RF_on_gap_Morgan = 'RF_on_gap_Morgan.sav'
+pickle.dump(RF_on_gap_Morgan, open(save_model_parameter_RF_on_gap_Morgan, 'wb'))
 
 
 
@@ -81,6 +83,8 @@ print("Score function used",RF_on_gap_Estate.scorer_)
 print("Score for the best tuning",-1*RF_on_gap_Estate.best_score_)
 print("fitting time",RF_on_gap_Estate.refit_time_)
 
+save_model_parameter_RF_on_gap_Estate = 'RF_on_gap_Estate.sav'
+pickle.dump(RF_on_gap_Estate, open(save_model_parameter_RF_on_gap_Estate, 'wb'))
 
 
 # RDKit_fingerprint and bandgaps using RF model
@@ -95,6 +99,8 @@ print("Score for the best tuning",-1*RF_on_gap_RDKit.best_score_)
 print("fitting time",RF_on_gap_RDKit.refit_time_)
 
 
+save_model_parameter_RF_on_gap_RDKit = 'RF_on_gap_RDKit.sav'
+pickle.dump(RF_on_gap_RDKit, open(save_model_parameter_RF_on_gap_RDKit, 'wb'))
 
 
 
